@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конспект по семинару</title>
+    <link rel="shortcut icon" href="/DZ_html/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/DZ_html/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Конспект по семинару</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Полезные ссылки</h2>
+            <p><a href="https://fonts.google.com/knowledge" target="_blank">Шрифты</a>
+            <p><a href="https://tpverstak.ru/flex-cheatsheet/" target="_blank">Верстальщик</a></p>
+            <p><a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Сайт Mozilla Firefox по основам HTML</a></p>
+            <p><a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">Сайт Mozilla Firefox по основам CSS</a></p>
+            <p><a href="https://www.bootstrapcdn.com/" target="_blank">BootstrapCDN</a></p>
+            <p><a href="https://gbcdn.mrgcdn.ru/uploads/record/227441/attachment/f706c6920cf786c04f3c2584dce5bf98.mp4"
+                    target="_blank">Запись семинара</a></p>
+                    <p><a href="http://htmlbook.ru/" target="_blank">htmlbook</a></p>
+                    <p><a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=ru" target="_blank">Как узнать шрифт?</a></p>
+            <p>Методичка. Урок 5.docx</p>
+            <p>Методичка. Урок 6.docx</p>
+
+
+            </p>
+        </div>
+        <div class="main">
+            <h2>Начинаем верстку сайта в VSC (Visual Studio Code)</h2>
+            <p>Если ещё ни разу ничего не делали для html в VSC, то делаем в первый раз следующие шаги:
+                Для начала запускаем VSC и выбираем папку. Открывается окно с выбором папок. Мы выбираем любой диск и
+                создаем там новую папку, например WebGroup и открываем её. Теперь она появилась в VSC. Теперь в VSC в
+                папке WebGroup создаем новый файл index.html. Далее ставим расширение. Переходим в VSC в меню расширений
+                и пишем Emmet и выбираем по совету преподавателя Emmet Live Yurii Semeniuk (<a
+                    href="https://marketplace.visualstudio.com/items?itemName=ysemeniuk.emmet-live"
+                    target="_blank">здесь можно скачать</a>). После того как поставили расширение идем в VSC в файл
+                index.html и в первой строчке ставим <strong>!</strong> и должна появится схема разметки будущей
+                страницы сайта на 12 строчках.
+                Следующая необходимая настройка.
+                Снова переходим в расширения. Пишем live server и выбираем Live server Ritwick Dey (<a
+                    href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">вот
+                    тут можно скачать</a>) и после установки в самом низу окна VSC на синей полоске в правой углу
+                появиться кнопочка Go Live. Она нужна, чтобы просматривать нашу страницу сайта через браузер в
+                интернете. Это эмулятор локального веб-сервера. Можно нажать и мы перейдем на сервер, но пока страница
+                пустая, т.к. ещё ничего не писали.
+                <strong>Всё готово для начала работы!</strong>
+            </p>
+            <h3>Название страницы</h3>
+            <p>Переходим в файл index.html и между тегами <strong>title</strong> вместо того что сейчас там написано
+                можем написать то,
+                как будем называть нашу страницу или сайт (например Моя первая страница). После нажатия на <strong>Go
+                    Live</strong>
+                заголовок страницы по ссылке http://127.0.0.1:5500/index.html должен поменяться на ваше название.</p>
+            <h3>Иконка у страницы (браузерная иконка)</h3>
+            <p>На следующей строчке под тегом <strong>title</strong> будем делать следующее, но пока ничего не пишем, а
+                разбираем по следующей схеме:
+
+            <p>
+                <link rel="shortcut icon" href="наша ссылка">
+            </p>
+
+            <p>наша ссылка - это вставляем или ссылка из интернета или указываем путь из своего компьютера. Т.е. через
+                href указываем местоположение.
+                Сделаем так, чтобы иконку можно было взять из своего компьютера.</p>
+
+            На сайте <a href="https://www.klipartz.com/" target="_blank">klipartz.com</a> выбираем любое изображение,
+            размер для иконки достаточно указать <strong>75</strong>. Скачиваем и указываем название как
+            <strong>favicon</strong> - это
+            общепринятое название для таких иконок. В VSC создаем папку для изображений в нашем рабочем поле и назовем
+            <strong>images</strong> и туда отправляем наше изображение <strong>favicon</strong>. И вот теперь пишем
+
+            <link rel="shortcut icon" href="/images/favicon.png">
+
+            На самом деле VSC после нажатия <strong>/</strong> позволяет выбирать уже то, что есть в папке. Выбираем и
+            ставим.
+
+            После нажатия на Go Live наш <strong>favicon</strong> встал на место на странице.</p>
+            <h3>Оформляем под тегом <strong>body</strong></h3>
+            <p>Приступаем к блочной разметке нашего сайта.
+
+                Тег <strong>div</strong> позволяет строить друг под другом тексты-блоки.
+                Тег <strong>span</strong> позволяте строить как строки.
+
+                Для облегчения пишем
+                div*5 и сразу выстраиваются 5 блоков (или сколько необходимо)</p>
+            <h3>Прописываем class</h3>
+            <p>Для начала делаем class header и указываем внутри заголовок h1. Смотрим на код на скриншоте и там видим :
+                container, main, заголовок h2, sidebar, р (параграф), footer.
+            <p>
+                <img src="/DZ_html/images/Code_1.jpg" alt="Скриншот кода №1">
+            </p>
+            </p>
+            <p>Чтобы заполнить больше пространства общепринято при верстке просто добавлять пустой текст lorem, это
+                просто пустой текст для визуального масшабирования страницы, потом вместо него вставляем что-то
+                озознанное под формат сайта. Поэтому, если напишем lorem*5, то текст увеличится в 5 раз, если
+                написать lorem5, то будет просто 5 слов. И вот на скриншоте видно это, а на сайте это все заполнится
+                английским текстом.</p>
+            <h3>Как вставлять ссылки</h3>
+            <p>В нашем коде есть запись:
+            <p>
+                <img src="/DZ_html/images/Code_2.jpg" alt="Скриншот кода №2">
+            </p>
+
+            активная ссылка будет на тексте "лицензии GNU v.3.0", потому что тег <strong>a</strong> обрамил этот
+            текст. Чтобы открылась страница в новом окне, то надо прописать в теге <strong>a</strong> атрибут
+            <strong>target="_blank"</strong>.
+            Итак запись будет следующая:
+            <p>
+                <img src="/DZ_html/images/Code_3.jpg" alt="Скриншот кода №3">
+            </p>
+
+            </p>
+            <h3>Якорь</h3>
+            <p> Прописывается с помощью решетки и выглядит вот так схематично <strong>a href="#top"</strong>
+                А вот так в коде:
+            <p>
+                <img src="/DZ_html/images/Code_4.jpg" alt="Скриншот кода №4">
+            </p>
+
+            </p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>&copy; Все права защищены.</p>
+        <p>Вся информация получена из открытых источников сети Интернет, распространяется по <a
+                href="https://www.gnu.org/licenses/gpl-3.0.ru.html" target="_blank">лицензии GNU v.3.0</a></p>
+        <a href="#top">Перейти на начало страницы</a>
+    </div>
+
+</body>
+
+</html>

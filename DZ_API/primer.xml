@@ -1,0 +1,56 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <book>
+        <name>Камил видит руками</name>
+        <author>Томаш Малковски</author>
+        <pages>146</pages>
+        <year>2019</year>
+        <prise>863</prise>
+    </book>
+    <book>
+        <name>Вероятности и неприятности</name>
+        <author>Сергей Самойленко</author>
+        <pages>134</pages>
+        <year>2022</year>
+        <prise>863</prise>
+    </book>
+    <book>
+        <name>Когда жизнь сбивает с ног</name>
+        <author>Расс Хэррис</author>
+        <pages>80</pages>
+        <year>2021</year>
+        <prise>945</prise>
+    </book>
+    <book>
+        <name>Цветы в темноте</name>
+        <author>Cестра Данг Нгием</author>
+        <pages>124</pages>
+        <year>2020</year>
+        <prise>1027</prise>
+    </book>
+    <book>
+        <name>Стратегии перемен</name>
+        <author>Джон Коттер</author>
+        <pages>102</pages>
+        <year>2022</year>
+        <prise>1418</prise>
+    </book>
+</catalog> -->
+
+
+<?xml version="1.0"?>
+<catalog>
+<doRegister>
+	<email>olga@gmail.com</email>
+	<name>Ольга</name>
+	<password>1</password>
+</doRegister>
+<doRegister>
+	<email>ivan@gmail.com</email>
+	<name>Иван</name>
+	<password>222</password>
+</doRegister>
+</catalog>
+
+
+https://nekobin.com/yejoyoruce  Задача 5
